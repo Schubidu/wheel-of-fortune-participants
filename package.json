@@ -1,5 +1,5 @@
 {
-  "name": "@finanzcheck/wheel-of-fortune-participants",
+  "name": "wheel-of-fortune-participants",
   "version": "0.9.0",
   "description": "Easy generate files for https://github.com/finanzcheck/wheel-of-fortune",
   "bin": {
