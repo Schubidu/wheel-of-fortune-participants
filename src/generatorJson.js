@@ -1,9 +1,8 @@
-"use strict";
-var Generator = require('./generator');
+import Generator from './generator';
 
-class GeneratorJSON extends Generator {
+export class GeneratorJSON extends Generator {
     constructor(filename) {
-        super({ext: 'json', filename});
+        super('json', filename);
     }
 
     /**
@@ -20,9 +19,8 @@ class GeneratorJSON extends Generator {
      * @returns {Generator}
      */
     static file(filename) {
-       return super.file(new GeneratorJSON(filename));
+        return super.file(new GeneratorJSON(filename));
     }
 }
 
-module.exports = GeneratorJSON;
-
+export default GeneratorJSON;

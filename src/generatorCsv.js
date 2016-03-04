@@ -1,9 +1,8 @@
-"use strict";
-var Generator = require('./generator');
+import Generator from './generator';
 
-class GeneratorCSV extends Generator {
+export class GeneratorCSV extends Generator {
     constructor(filename, cols) {
-        super({ext: 'csv', filename});
+        super('csv', filename);
         this.cols = cols;
     }
 
@@ -34,5 +33,4 @@ class GeneratorCSV extends Generator {
     }
 }
 
-module.exports = GeneratorCSV;
-
+export default GeneratorCSV;
