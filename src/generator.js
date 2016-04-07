@@ -1,8 +1,8 @@
-import { default as faker } from 'faker';
-import { default as fs } from 'fs';
-import { default as path } from 'path';
+import { faker } from 'faker';
+import { fs } from 'fs';
+import { path } from 'path';
 import { mkdir } from 'shelljs';
-import { default as Chance } from 'chance';
+import { Chance } from 'chance';
 var chance = new Chance();
 
 const MIN = 20;
